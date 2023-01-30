@@ -1,0 +1,35 @@
+﻿<Window x:Class="AlgorithmsLaba5.Views.ConnectionSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlgorithmsLaba5.Views"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="ConnectionSelection" Height="100" Width="150">
+    <Grid Background="#FF34434F" MouseDown="Grid_MouseDown_MovingWindow">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="2" Grid.Row="0" Content="✖" Click="Button_Click_Close" Background="Red" Foreground="White" FontSize="12"/>
+        <!--<ComboBox x:Name="ComboBox" Grid.ColumnSpan="3" Grid.Row="1" Foreground="Black">
+            <ComboBoxItem Content="Родитель-Ребёнок"/>
+            <ComboBoxItem Content="Ребёнок-Родитель"/>
+            <ComboBoxItem Content="Партнер"/>
+        </ComboBox>-->
+        <CheckBox Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" x:Name="lever_Oreinted" IsThreeState="False" IsChecked="False" Height="20" Content="Направленность"/>
+        <TextBlock Grid.Row="2" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Вес" Foreground="White" />
+        <TextBox x:Name="WightText" PreviewTextInput="PreviewTextInput" Grid.Row="2" Grid.ColumnSpan="3" Grid.Column="1"/>
+        <Button Grid.ColumnSpan="3" Grid.Row="3" Content="Выбрать тип связи" Click="Button_Click_SelectSlement" Foreground="White" Background="#FF41803E" FontSize="12"/>
+    </Grid>
+</Window>
