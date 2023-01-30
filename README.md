@@ -9,4 +9,4 @@ Graphical representation of the algorithm on graphs
 - Prim's algorithm (Algorithm for constructing a minimum spanning tree in a graph)
 - Ford-Fulkerson algorithm (Solves the problem of finding the maximum flow in the transport network)
 
-![Menu](AlgorithmsLaba5/Assets/Images/menu-screen.png "Menu Screen")
+![Menu](/AlgorithmsLaba5/Assets/Images/menu-screen.png "Menu Screen")
